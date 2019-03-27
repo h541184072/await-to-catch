@@ -18,7 +18,7 @@ var AwaitToJs = /** @class */ (function () {
             };
             err && messageUi.error(err.message || err);
             catchServiceError(params);
-            return null;
+            return undefined;
         });
     };
     return AwaitToJs;

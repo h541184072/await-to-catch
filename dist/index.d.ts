@@ -11,6 +11,6 @@ interface urlOptions {
 export default class AwaitToJs {
     private defaultOptions;
     constructor(options: defaultOptions);
-    to<T>(promise: Promise<T>, options: urlOptions): Promise<T | null>;
+    to<T>(promise: Promise<T>, options: urlOptions): Promise<T | undefined>;
 }
 export {};

@@ -22,7 +22,7 @@ export default class AwaitToJs {
     to<T>(
         promise: Promise<T>,
         options: urlOptions,
-    ): Promise<T | null> {
+    ): Promise<T | undefined> {
         return promise
             .catch(err => {
                 const {apiUrl} = options;
@@ -40,7 +40,7 @@ export default class AwaitToJs {
                 err && messageUi.error(err.message || err);
                 catchServiceError(params);
 
-                return null;
+                return undefined;
             });
     }
 }
