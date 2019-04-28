@@ -1,5 +1,5 @@
 interface messageUi {
-    error: Function;
+    readonly error: Function;
 }
 interface defaultOptions {
     readonly messageUi: messageUi;
