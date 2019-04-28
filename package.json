@@ -17,6 +17,7 @@
     "tsc": "tsc"
   },
   "devDependencies": {
+    "prettier": "^1.17.0",
     "typescript": "^3.3.4000"
   }
 }
