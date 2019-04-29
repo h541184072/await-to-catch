@@ -4,7 +4,7 @@
 
 -   [x] 替换 try catch,让代码更加简洁
 -   [x] 接口错误统一处理
--   [x] 配合 tms-request 使用,无缝链接
+-   [x] 配合 tms-request 使用,无缝连接
 -   [x] 灵活的配置想要添加的错误信息
 
 ## 指南
@@ -90,7 +90,7 @@ import { message } from 'antd';
 
 const updateApi = async e => {
     try {
-        return await httpSpace.$http.post(
+        return await $http.post(
             `/user/update`,
             e
         );
@@ -103,7 +103,7 @@ const updateApi = async e => {
 
 const deleteAPi = async e => {
     try {
-        return await httpSpace.$http.post(
+        return await $http.post(
             `/user/delete`,
             e
         );
